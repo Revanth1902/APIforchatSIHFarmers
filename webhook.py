@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify
 import requests
 import os
 from deep_translator import GoogleTranslator
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app) 
 
 # Detect language based on Malayalam unicode range
 def detect_language(text):
