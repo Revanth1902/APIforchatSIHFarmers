@@ -1,4 +1,4 @@
 Flask
 requests
 deep-translator
-
+flask_cors
